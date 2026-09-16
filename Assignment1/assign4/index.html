@@ -6,14 +6,18 @@
     <title>forms</title>
   </head>
   <body>
-    <h1>Task 1</h1>
-    <h2>
-      <u
-        >Create an HTML form as shown in given Image. Use only pure HTML codes.
-      </u>
-    </h2>
+    <legend align="center"><h1>Task 1</h1></legend>
+    <legend align="center">
+      <h2>
+        <u
+          >Create an HTML form as shown in given Image. Use only pure HTML
+          codes.
+        </u>
+      </h2>
+    </legend>
+
     <fieldset>
-      <legend > </legend>
+      <legend></legend>
       <form>
         <h1>Admin Login Page</h1>
         <label for="UN">Username: </label>
@@ -31,16 +35,48 @@
       </form>
     </fieldset>
 
-    <h1>Task 2</h1>
-    <h2>
-      <u
-        >Create an HTML form as shown in given Image. Use only pure HTML codes.
-      </u>
-    </h2>
+    <legend align="center"><h1>Task 2</h1></legend>
+    <legend align="center">
+      <h2>
+        <u
+          >Create an HTML form as shown in given Image. Use only pure HTML
+          codes.
+        </u>
+      </h2>
+    </legend>
 
-    <h1>Pizza order form</h1>
-    <label for="FN"> First Name:</label>
-    <input type="text" name="" id="FN">
-    
+    <fieldset>
+      <form>
+        <h1>Pizza order form</h1>
+        <label for="FN"> First Name:</label>
+        <input type="text" name="" id="FN" />
+        <br />
+        <label for="LN"> Last Name:</label>
+        <input type="text" name="" id="LN" />
+        <br />
+        <label for="EmailAdd"> Email address:</label>
+        <input type="text" name="" id="EmailAdd" />
+        <br />
+        <label for="Mobile"> Mobile Number:</label>
+        <input type="number" name="" id="Mobile" />
+        <br />
+        <label for="PDDate"> Preferred Delivery Date:</label>
+        <input type="date" name="" id="PDDate" />
+        <br />
+
+        <label for="size">Size:</label>
+        <br />
+        <input type="radio" name="Size" id="Small" value="Small" />
+        <span>Small</span>
+
+        <label for="size">Size:</label>
+        <input type="radio" name="Size" id="medium" value="medium" />
+        <span>Medium</span>
+
+        <label for="size">Size:</label>
+        <input type="radio" name="Size" id="large" value="large" />
+        <span>Large</span>
+      </form>
+    </fieldset>
   </body>
 </html>
