@@ -1,0 +1,36 @@
+body{
+
+background-color: rgb(65, 147, 219);
+}
+.main{
+    background-color:blanchedalmond;
+    color:blueviolet;
+}
+#card{
+    background-color: aquamarine;
+    width: 500px;
+    height: 300px;
+    overflow: auto;
+    h3{
+        background-color: blue;
+    }
+}
+p{
+    color: rgb(44, 75, 185);
+    border: red;
+    border: 4px solid green;
+}
+#clickbtn{
+    background-color: aqua;
+    border: 1px solid bisque;
+    border-radius: 3px;
+    box-shadow: 2px 2px 1px 1px gray;
+}
+#clickbtn:hover{
+    background-color: aliceblue;
+    color: bisque;
+}
+#clickbtn:active{
+    background-color: rgb(37, 102, 159);
+    color: rgb(168, 94, 4);
+}
