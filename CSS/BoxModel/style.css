@@ -2,12 +2,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f2f4f7;
+  background-color: #50976b;
 }
 
 .container {
@@ -20,11 +20,11 @@ body {
   padding: 30px;
 }
 
-.card {
+#card {
   width: 350px;
   padding: 50px 40px;
   text-align: center;
-  background-color: white;
+  background-color: rgb(207, 162, 15);
   border-radius: 45px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -35,7 +35,7 @@ body {
 }
 
 .clkbtn {
-  padding: 10px 20px;
+  padding: 5px 10px;
   border: none;
   border-radius: 6px;
   background-color: #007bff;
@@ -52,5 +52,7 @@ body {
   box-shadow: #2b4056;
   border-radius: 3px;
   border-color: #0056b3;
+  
+  
 }
 

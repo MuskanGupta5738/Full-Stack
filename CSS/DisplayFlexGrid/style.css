@@ -3,16 +3,40 @@
     padding: 0;
 }
 #outer{
-    border: 1px solid black;
+    border: 10px solid black;
     display: flex;
+    height: 500px;
     /* gap: 50px; */
-    justify-content: baseline;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 .d{
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 300px;
     border: 1px solid #000;
     background: red;
     /* display: inline-block;  hr line */
+    color: #000;
+    font-size: xx-large;
+
+
+}
+#grid-outer{
+    padding: 40px;
+    border: 1px solid #000;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto ;
+    justify-content:content;
+    row-gap: 20px;
+    column-gap:70px;
+    font-size: xx-large;
+    font-weight: 100;
+}
+.gd{
+width: 60px;
+height: 100px;
+border: 1px solid #000;
+background: red;
 
 }
