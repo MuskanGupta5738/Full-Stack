@@ -40,3 +40,10 @@ border: 1px solid #000;
 background: red;
 
 }
+
+.personal outer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 10px;
+
+}
