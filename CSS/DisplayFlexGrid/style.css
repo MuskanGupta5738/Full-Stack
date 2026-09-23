@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#outer{
+    border: 1px solid black;
+    display: flex;
+    /* gap: 50px; */
+    justify-content: baseline;
+}
+.d{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    background: red;
+    /* display: inline-block;  hr line */
+
+}
