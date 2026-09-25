@@ -1,0 +1,127 @@
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+ #clickbtn{
+    background-color: rgb(80, 184, 129);
+    border: 1px solid beige;
+    border-style: solid ;
+    border-width: 2px;
+    border-radius: 3px;
+    box-shadow: 2px 4px 1px 1px grey; 
+    justify-content: center;
+    align-items: center;
+ }
+#clickbtn:hover{
+    background-color: white;
+    color: rgb(78, 162, 97);
+}
+
+#clickbtn:active{
+    background-color: rgb(13, 161, 102);
+    color:azure;
+}
+.identification {
+    gap: 40px;
+    border-collapse: separate;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width:auto;
+} 
+
+.identification-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-spacing: 100px 12px;
+    flex: 1;
+}
+
+.form-group {
+    align-items: center;
+    /* gap: 0px; */
+    /* margin-bottom: 0px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.form-group input[type="text"] {
+    height: 38px;
+    padding: 8px ;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+     flex: 0;
+    width: auto;
+    box-sizing: border-box;
+}
+
+.form-group input[type="file"] {
+    width: auto;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background-color: #fff;
+     flex: 0;
+    box-sizing: border-box;
+}
+.language-table {
+    width: 70%;
+    /* margin: 10px auto; */
+    border-collapse: separate;
+    border-spacing: 8px;
+}
+
+.language-table{
+    
+    padding: 0px;
+    text-align: left;
+    width: 1300px;
+    cursor: pointer;
+}
+.details{
+    padding: 0;
+    margin: 0;
+    width: 1300px;
+}
+.qualification{
+     padding: 0;
+    margin: 0;
+    width: 1300px;
+}
+.details {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+.details {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+}
+.details {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px 15px;
+}
+.details {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px 12px;
+}
+
+.details td {
+    padding: 5px;
+}
