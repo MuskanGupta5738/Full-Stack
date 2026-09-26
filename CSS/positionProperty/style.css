@@ -32,3 +32,18 @@
   bottom: 30px;
   right: 40px;
 }
+#section1{
+  display: flex;
+  gap: 20px;
+}
+#img-div{
+  width: 500px;
+  height: 500px;
+  position: relative;
+  z-index: ;
+  top: 99%;
+}
+#img-div{
+  width: fit;
+  height: inherit;
+}
