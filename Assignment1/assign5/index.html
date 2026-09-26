@@ -3,18 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS</title>
+    <title>Login & Registration</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <legend align="center">
-      <h1>Task 1:</h1>
-      <h2>
-        <u
-          >Create an HTML page as shown in given Image. Use CSS along with HTML.
-        </u>
-      </h2>
-    </legend>
 
-    <legend align="center"></legend>
+  <body>
+    <h1 align="center">Task 1:</h1>
+    <h3 align="center"><u>Create an HTML page as shown in given Image. Use CSS along with 
+HTML. </u></h3>
+    <div class="container">
+      <div class="box">
+        <h2><u>Lo</u>gin</h2>
+
+        <form>
+          <input type="email" placeholder="Enter your email" />
+          <input type="password" placeholder="Confirm a password" />
+
+          <div class="remember">
+            <div>
+              <input type="checkbox" />
+              <label>Remember me</label>
+            </div>
+
+            <a href="#">Forgot password?</a>
+          </div>
+
+          <button type="submit">Login Now</button>
+
+          <p>
+            Don't have an account?
+            <a href="#">Signup now</a>
+          </p>
+        </form>
+      </div>
+
+      <div class="box">
+        <h2><u>Re</u>gistration</h2>
+
+        <form>
+          <input type="text" placeholder="Enter your name" />
+
+          <input type="email" placeholder="Enter your email" />
+
+          <input type="password" placeholder="Create a password" />
+
+          <input type="password" placeholder="Confirm a password" />
+
+          <div class="terms">
+            <input type="checkbox" />
+            <label>I accept all terms & conditions</label>
+          </div>
+
+          <button type="submit">Register Now</button>
+
+          <p>
+            Already have an account?
+            <a href="#">Login now</a>
+          </p>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
