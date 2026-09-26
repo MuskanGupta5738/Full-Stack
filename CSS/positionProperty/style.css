@@ -22,7 +22,7 @@
   border: 1px solid #127407;
   border-radius: 5px;
 }
-#ask-me{
+#ask-me {
   padding: 5px 10px;
   background-color: rgb(133, 212, 15);
   border: 1px solid #127407;
@@ -32,18 +32,28 @@
   bottom: 30px;
   right: 40px;
 }
-#section1{
+#section1 {
   display: flex;
   gap: 20px;
 }
-#img-div{
+#img-div {
   width: 500px;
   height: 500px;
   position: relative;
-  z-index: ;
+  z-index:;
   top: 99%;
 }
-#img-div{
+#img-div {
   width: fit;
   height: inherit;
+}
+#learnMore,
+#ReadMore {
+  padding: 5px 10px;
+  background-color: rgb(133, 212, 15);
+  border: 1px solid #127407;
+  border-radius: 5px;
+}
+#learnMore {
+  position: absolute;
 }
