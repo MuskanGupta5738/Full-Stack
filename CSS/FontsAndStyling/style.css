@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Playwrite+BE+WAL+Guides&family=Playwrite+CA+Guides&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +7,13 @@
 .heading {
   font-size: 100px;
   font-weight: 900;
+  font-family: "Playwrite BE WAL Guides", cursive;  
 }
 .subheading {
   font-size: x-large;
   font-weight: 700;
   font-style: italic;
+  font-family: "Edu QLD Hand", cursive;
 }
 #description span {
   font-weight: 400;
