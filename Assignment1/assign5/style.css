@@ -1,88 +1,63 @@
-body {
-  margin: 0;
-  overflow: hidden;
-  background-color: #426cf0;
+.e {
+  background-color: rgb(92, 92, 233);
+  height: 500px;
+  width: 800px;
+  font-style: "Poppins", sans-serif;
+  margin: 50px;
+  padding: 10px 20px 10px 40px;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  height: 100vh;
-}
-
-.box {
-  background-color: white;
-  width: 300px;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-h2 {
-  font-size: 20px;
-  color: #444;
-  margin-bottom: 40px;
-}
-
-h2::first-letter {
-  text-decoration: underline;
-}
-
-form input[type="email"],
-form input[type="password"],
-form input[type="text"] {
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #ddd;
-  padding: 10px 0;
-  margin-bottom: 10px;
-  outline: none;
-}
-
-::placeholder {
-  color: #aaa;
-  font-size: 10px;
-}
-
-.remember {
-  display: flex;
+#login {
+  background-color: aliceblue;
+  width: 250px;
+  height: 250px;
   justify-content: space-between;
-  align-items: center;
-  font-size: 8px;
-  margin: 5px 0 25px;
-}
-
-.terms {
-  font-size: 10px;
-}
-
-.terms input {
-  width: 15px;
-  height: 15px;
-}
-
-button {
-  width: 100%;
-  background-color: #426cf0;
-  color: white;
+  display: inline-block;
   padding: 10px;
-  border-radius: 5px;
-  font-size: 10px;
-  font-weight: bold;
-  cursor: pointer;
+  margin: 50px;
+  border-radius: 3px;
 }
-button :hover {
-  background-color: #426cf0;
+#email {
+  border: none;
+  border-bottom: 1px solid #000;
 }
-button :active {
-  background-color: #426cf0;
+#password {
+  border: none;
+  border-bottom: 1px solid #000;
+}
+#name {
+  border: none;
+  border-bottom: 1px solid #000;
+}
+#btn1 {
+  width: 250px;
+  height: 30px;
+  background-color: rgb(10, 129, 248);
   color: aliceblue;
+  border-radius: 5px;
+  border: rgb(55, 153, 250);
+}
+#box {
+  font-size: 10px;
+}
+#under {
+  color: dodgerblue;
+}
+#para {
+  font-size: 10px;
+}
+#reg {
+  background-color: aliceblue;
+  width: 250px;
+  height: 350px;
+  justify-content: space-between;
+  display: inline-block;
+  padding: 40px;
+  margin: 10px;
+  border-radius: 3px;
 }
 
-p {
-  text-align: center;
+#i {
   font-size: 10px;
-  color: #666;
-  margin-top: 20px;
+  justify-content: space-between;
 }

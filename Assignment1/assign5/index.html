@@ -3,64 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login & Registration</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
-
   <body>
-    <h1 align="center">Task 1:</h1>
-    <h3 align="center"><u>Create an HTML page as shown in given Image. Use CSS along with 
-HTML. </u></h3>
-    <div class="container">
-      <div class="box">
-        <h2><u>Lo</u>gin</h2>
+    <div class="e">
+      <div id="login">
+        <h3><u id="under">Lo</u>gin</h3>
+        <i class="ri-mail-line"></i>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+        />
 
-        <form>
-          <input type="email" placeholder="Enter your email" />
-          <input type="password" placeholder="Confirm a password" />
+        <br />
+        <br />
+        <i class="ri-lock-line"></i>
 
-          <div class="remember">
-            <div>
-              <input type="checkbox" />
-              <label>Remember me</label>
-            </div>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Confirm a password"
+        />
+        <i class="ri-eye-line"></i>
+        <br />
+        <br />
+        <p id="i">
+          <input type="checkbox" name="rememberme" />
+          Remember me
+          <a href="#" class="forgot-pass">Forgot password?</a>
+        </p>
 
-            <a href="#">Forgot password?</a>
-          </div>
+        <br />
+        <button id="btn1">Login Now</button>
 
-          <button type="submit">Login Now</button>
-
-          <p>
-            Don't have an account?
-            <a href="#">Signup now</a>
-          </p>
-        </form>
+        <p id="para">Don't have an account? <a href="#">Signup now</a></p>
       </div>
 
-      <div class="box">
-        <h2><u>Re</u>gistration</h2>
+      <div id="reg">
+        <h3><u id="under">Re</u>gistration</h3>
+        <br />
+        <i class="ri-user-3-line"></i>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+        />
+        <br /><br />
+        <i class="ri-mail-line"></i>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+        />
 
-        <form>
-          <input type="text" placeholder="Enter your name" />
+        <br />
+        <br />
+        <i class="ri-lock-line"></i>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Create a password"
+        />
+        <br />
+        <br />
+        <i class="ri-lock-line"></i>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Confirm a password"
+        />
+        <i class="ri-eye-line"></i>
+        <br /><br />
+        <p id="i">
+          <input type="checkbox" name="terms" />I accept all terms & conditions
+        </p>
 
-          <input type="email" placeholder="Enter your email" />
-
-          <input type="password" placeholder="Create a password" />
-
-          <input type="password" placeholder="Confirm a password" />
-
-          <div class="terms">
-            <input type="checkbox" />
-            <label>I accept all terms & conditions</label>
-          </div>
-
-          <button type="submit">Register Now</button>
-
-          <p>
-            Already have an account?
-            <a href="#">Login now</a>
-          </p>
-        </form>
+        <br />
+        <button id="btn1">Register Now</button>
+        <p id="i">Already have an account? <a href="#">Login now</a></p>
       </div>
     </div>
   </body>
