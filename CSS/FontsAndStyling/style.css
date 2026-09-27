@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.heading {
+  font-size: 100px;
+  font-weight: 900;
+}
+.subheading {
+  font-size: x-large;
+  font-weight: 700;
+  font-style: italic;
+}
+#description span {
+  font-weight: 400;
+  color: rgb(91, 128, 71);
+  text-decoration: underline;
+}
+main {
+  margin-top: 10px;
+}
+.pointerHead {
+  font-size: x-large;
+  font-weight: 700;
+}
+ul {
+  margin-left: 30px;
+  list-style: "®  ";
+}
+ol {
+  margin-left: 30px;
+  list-style: lower-greek;
+}
+footer {
+  background-color: darkblue;
+  color: pink;
+  padding: 5px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
