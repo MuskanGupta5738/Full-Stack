@@ -1,0 +1,182 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f0fa;
+}
+
+/* Header */
+header {
+  background-color: #9b85c4;
+  padding: 25px 8%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Logo Dot */
+.logo span {
+  color: #e6d5f5;
+}
+
+/* Navbar Layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navigation List */
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+}
+
+/* Navigation Links */
+nav ul li a {
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 8px;
+  transition: 0.3s;
+}
+
+/* Active and Hover Links */
+nav ul li a.active,
+nav ul li a:hover {
+  color: #ffffff;
+  border-bottom: 4px solid #e6d5f5;
+}
+
+/* Icons */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-icons a {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-icons a:hover {
+  color: #e6d5f5;
+  transform: translateY(-3px);
+}
+
+/* Hero Section */
+.hero {
+  background-color: #f5f0fa;
+  padding: 70px 8%;
+}
+
+/* Hero Container */
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Hero Content */
+.hero-content {
+  width: 45%;
+}
+
+/* Main Heading */
+.hero-content h2 {
+  font-size: 52px;
+  color: #6f5597;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+/* Description */
+.hero-content p {
+  font-size: 16px;
+  color: #756b81;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* Buttons Container */
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Common Button */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Shop Button */
+.shop-btn {
+  background-color: #9b85c4;
+  color: white;
+  border: 2px solid #9b85c4;
+}
+
+/* Explore Button */
+.explore-btn {
+  color: #6f5597;
+  border: 2px solid #9b85c4;
+}
+
+/* Button Hover */
+.shop-btn:hover {
+  background-color: #6f5597;
+  border-color: #6f5597;
+}
+
+.explore-btn:hover {
+  background-color: #e6d5f5;
+}
+
+/* Hero Image */
+.hero-image {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 650px;
+  height: 450px;
+  object-fit: contain;
+}
+
