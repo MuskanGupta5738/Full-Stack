@@ -3,47 +3,47 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
+}
 /* Body */
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f0fa;
-} 
+}
 /* Header */
 header {
   background-color: #aa85c4;
   padding: 25px 8%;
 }
- /* Navbar */
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
- /* Logo */
+/* Logo */
 .logo {
   color: white;
   font-size: 45px;
   font-weight: bold;
   font-family: "Black Ops One", system-ui;
-} 
+}
 /* Logo Dot */
 .logo span {
   color: #e6d5f5;
-} 
+}
 /* Navbar Layout */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-} 
+}
 /* Navigation List */
 nav ul {
   display: flex;
   align-items: center;
   list-style: none;
   gap: 30px;
-} 
+}
 /* Navigation Links */
 nav ul li a {
   color: rgba(255, 255, 255, 0.65);
@@ -52,13 +52,13 @@ nav ul li a {
   font-weight: 500;
   padding-bottom: 8px;
   transition: 0.3s;
-} 
+}
 /* Active and Hover Links */
 nav ul li a.active,
 nav ul li a:hover {
   color: #ffffff;
   border-bottom: 4px solid #e6d5f5;
-} 
+}
 /* Icons */
 .nav-icons {
   display: flex;
@@ -375,88 +375,172 @@ nav ul li a:hover {
   transform: translateY(-3px);
 }
 
-/* Hero Section */
+/* ===== HERO SECTION ===== */
+
 .hero {
-  background-color: #f5f0fa;
-  padding: 70px 8%;
+  background-color: #f7f3fc;
+  padding: 70px 8% 35px;
+  overflow: hidden;
+  position: relative;
 }
 
 /* Hero Container */
+
 .hero-container {
+  max-width: 1600px;
+  min-height: 550px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 50px;
-  max-width: 1400px;
-  margin: 0 auto;
+  gap: 35px;
 }
 
 /* Hero Content */
+
 .hero-content {
-  width: 45%;
-  font-family: "Edu QLD Hand", cursive;
+  width: 43%;
+  flex-shrink: 0;
 }
 
-/* Main Heading */
-.hero-content h2 {
-  font-size: 52px;
-  color: #6f5597;
-  line-height: 1.2;
-  margin-bottom: 25px;
-}
+/* Small Tag */
 
-/* Description */
-.hero-content p {
-  font-size: 16px;
-  color: #756b81;
-  line-height: 1.8;
-  margin-bottom: 30px;
-}
-
-/* Buttons Container */
-.hero-buttons {
+.hero-tag {
   display: flex;
   align-items: center;
   gap: 15px;
+  color: #8874b5;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+.hero-tag span {
+  width: 55px;
+  height: 3px;
+  background-color: #9b85c4;
+  border-radius: 5px;
+}
+
+/* Main Heading */
+
+.hero-content h2 {
+  color: #30264a;
+  font-family: Arial, sans-serif;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 22px;
+}
+
+/* Second Line */
+
+.hero-content h2 span {
+  display: block;
+  color: #9676d5;
+}
+
+/* Description */
+
+.hero-content p {
+  color: #777183;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 600px;
+  margin-bottom: 32px;
+}
+
+/* Hero Buttons */
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 /* Common Button */
-.btn {
-  display: inline-block;
-  padding: 14px 28px;
-  border-radius: 30px;
+
+.hero-buttons .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 18px 30px;
+  border-radius: 35px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
-/* Shop Button */
-.shop-btn {
-  background-color: #9b85c4;
+/* Shop Now */
+
+.hero-buttons .shop-btn {
   color: white;
-  border: 2px solid #9b85c4;
+  background-color: #9676d5;
+  border: 2px solid #9676d5;
 }
 
-/* Explore Button */
-.explore-btn {
-  color: #6f5597;
-  border: 2px solid #9b85c4;
+.hero-buttons .shop-btn span {
+  background-color: white;
+  color: #9676d5;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+/* Explore Collection */
+
+.hero-buttons .explore-btn {
+  color: #8874b5;
+  background-color: transparent;
+  border: 2px solid #a78bd6;
 }
 
 /* Button Hover */
-.shop-btn:hover {
-  background-color: #6f5597;
-  border-color: #6f5597;
+
+.hero-buttons .shop-btn:hover {
+  background-color: #7658b2;
+  border-color: #7658b2;
+  transform: translateY(-3px);
 }
 
-.explore-btn:hover {
-  background-color: #e6d5f5;
+.hero-buttons .explore-btn:hover {
+  background-color: #eae1f8;
+  transform: translateY(-3px);
+}
+
+/* Hero Dots */
+
+.hero-dots {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 45px;
+}
+
+.hero-dots .dot {
+  width: 13px;
+  height: 13px;
+  background-color: #d8cce9;
+  border-radius: 50%;
+}
+
+.hero-dots .dot.active {
+  width: 28px;
+  background-color: #9676d5;
+  border-radius: 20px;
 }
 
 /* Hero Image */
+
 .hero-image {
-  width: 55%;
+  width: 57%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -464,9 +548,10 @@ nav ul li a:hover {
 
 .hero-image img {
   width: 100%;
-  max-width: 650px;
-  height: 450px;
+  max-width: 850px;
+  height: 550px;
   object-fit: contain;
+  object-position: center;
 }
 
 /* Products Section */
