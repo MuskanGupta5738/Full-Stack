@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #faf8ff;
+  color: #302442;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 85px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+/* Logo */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #7651a8;
+}
+
+.logo span {
+  color: #b59ad8;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #40364f;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #9870c8;
+}
+
+/* Appointment Button */
+.appointment-btn {
+  text-decoration: none;
+  background-color: #9870c8;
+  color: white;
+  padding: 13px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.appointment-btn:hover {
+  background-color: #7952aa;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  min-height: 570px;
+  padding: 60px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4effb;
+}
+
+/* Hero Content */
+.hero-content {
+  width: 52%;
+}
+
+.hero-tag {
+  display: inline-block;
+  color: #9870c8;
+  background-color: #e9ddf8;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 22px;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  line-height: 1.2;
+  color: #332447;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+  color: #9870c8;
+}
+
+.hero-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #71657e;
+  max-width: 480px;
+  margin-bottom: 30px;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.primary-btn,
+.secondary-btn {
+  text-decoration: none;
+  padding: 14px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.primary-btn {
+  background-color: #9870c8;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #7952aa;
+}
+
+.secondary-btn {
+  color: #7952aa;
+  border: 1px solid #9870c8;
+  background-color: transparent;
+}
+
+.secondary-btn:hover {
+  background-color: #e9ddf8;
+}
+
+/* Hero Image */
+.hero-image {
+  width: 42%;
+  height: 440px;
+  overflow: hidden;
+  border-radius: 180px 180px 20px 20px;
+  background-color: #e3d4f3;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* About Section */
+.about {
+    width: 100%;
+    min-height: 570px;
+    padding: 80px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    background-color: #FFFFFF;
+}
+
+/* About Image */
+.about-image {
+    width: 45%;
+    height: 420px;
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Experience Box */
+.experience {
+    position: absolute;
+    right: -25px;
+    bottom: 25px;
+    background-color: #9870C8;
+    color: #FFFFFF;
+    padding: 22px 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(80, 50, 120, 0.15);
+}
+
+.experience h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.experience p {
+    font-size: 13px;
+}
+
+/* About Content */
+.about-content {
+    width: 48%;
+}
+
+.about-tag {
+    display: inline-block;
+    color: #9870C8;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.about-content h2 {
+    color: #332447;
+    font-size: 38px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.about-content > p {
+    color: #71657E;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 22px;
+}
+
+/* About Features */
+.about-features {
+    margin-bottom: 28px;
+}
+
+.about-features p {
+    color: #40364F;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.about-features span {
+    color: #9870C8;
+    font-size: 19px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Discover Button */
+.about-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #9870C8;
+    color: #FFFFFF;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.about-btn:hover {
+    background-color: #7952AA;
+}
+
+/* Services Section */
+.services {
+    width: 100%;
+    padding: 80px 7%;
+    background-color: #F5F0FC;
+}
+
+/* Services Heading */
+.services-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.services-heading span {
+    color: #9870C8;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.services-heading h2 {
+    color: #332447;
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+.services-heading p {
+    color: #71657E;
+    font-size: 16px;
+}
+
+/* Services Container */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Service Cards */
+.service-card {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #EEE5F8;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(105, 70, 150, 0.12);
+    border-color: #CDB6E9;
+}
+
+/* Service Icon */
+.service-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDE2FA;
+    color: #9870C8;
+    font-size: 27px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+}
+
+/* Service Card Content */
+.service-card h3 {
+    color: #332447;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.service-card p {
+    color: #71657E;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.service-card a {
+    text-decoration: none;
+    color: #9870C8;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.service-card a:hover {
+    color: #7952AA;
+}
