@@ -1,87 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Edu+QLD+Hand:wght@400..700&family=Playwrite+BE+WAL+Guides&family=Playwrite+CA+Guides&display=swap"); /* Basic Reset */
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/* Body */
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f0fa;
-}
-/* Header */
-header {
-  background-color: #aa85c4;
-  padding: 25px 8%;
-}
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-/* Logo */
-.logo {
-  color: white;
-  font-size: 45px;
-  font-weight: bold;
-  font-family: "Black Ops One", system-ui;
-}
-/* Logo Dot */
-.logo span {
-  color: #e6d5f5;
-}
-/* Navbar Layout */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-/* Navigation List */
-nav ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  gap: 30px;
-}
-/* Navigation Links */
-nav ul li a {
-  color: rgba(255, 255, 255, 0.65);
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-  padding-bottom: 8px;
-  transition: 0.3s;
-}
-/* Active and Hover Links */
-nav ul li a.active,
-nav ul li a:hover {
-  color: #ffffff;
-  border-bottom: 4px solid #e6d5f5;
-}
-/* Icons */
-.nav-icons {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.nav-icons a {
-  color: white;
-  font-size: 22px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-.nav-icons a:hover {
-  color: #e6d5f5;
-  transform: translateY(-3px);
+  font-family: "Inter", Arial, sans-serif;
+  background: #f5f0fa;
+  color: #30264a;
 }
 
-/* ===== CREATIVE NAVBAR ===== */
+/* =========================
+   HEADER / NAVBAR
+========================= */
 
 .main-header {
+  width: 100%;
   background: #574288;
-  padding: 20px 6%;
-  border-radius: 0 0 30px 30px;
+  padding: 18px 6%;
+  border-radius: 0 0 28px 28px;
   position: relative;
   z-index: 10;
   box-shadow: 0 8px 25px rgba(48, 38, 74, 0.12);
@@ -89,27 +30,27 @@ nav ul li a:hover {
 
 .navbar {
   max-width: 1600px;
+  min-height: 70px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: 28px;
 }
 
-/* ===== BRAND LOGO ===== */
+/* Brand */
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 14px;
   text-decoration: none;
   flex-shrink: 0;
 }
 
-/* Circular Logo Mark */
 .brand-mark {
-  width: 75px;
-  height: 75px;
+  width: 72px;
+  height: 72px;
   border: 3px solid #bda2f2;
   border-radius: 50%;
   position: relative;
@@ -118,7 +59,6 @@ nav ul li a:hover {
   justify-content: center;
 }
 
-/* Chair Illustration */
 .chair-back {
   width: 27px;
   height: 19px;
@@ -126,7 +66,7 @@ nav ul li a:hover {
   border-bottom: 0;
   border-radius: 7px 7px 0 0;
   position: absolute;
-  top: 23px;
+  top: 22px;
 }
 
 .chair-seat {
@@ -135,7 +75,7 @@ nav ul li a:hover {
   background: #c6aef4;
   border-radius: 5px;
   position: absolute;
-  top: 41px;
+  top: 40px;
 }
 
 .chair-leg {
@@ -143,38 +83,35 @@ nav ul li a:hover {
   height: 10px;
   background: #c6aef4;
   position: absolute;
-  top: 49px;
+  top: 48px;
   border-radius: 3px;
 }
 
 .chair-leg.left {
-  left: 21px;
+  left: 20px;
 }
 
 .chair-leg.right {
-  right: 21px;
+  right: 20px;
 }
 
-/* Brand Text */
 .brand-text h1 {
   color: #ffffff;
-  font-size: 38px;
-  line-height: 1;
+  font-family: "Black Ops One", system-ui;
+  font-size: 34px;
+  line-height: 1.1;
   letter-spacing: 1px;
-}
-
-.brand-text h1 span {
-  color: #c6aef4;
+  white-space: nowrap;
 }
 
 .brand-text p {
   color: #d2c6e8;
   font-size: 10px;
   letter-spacing: 4px;
-  margin-top: 8px;
+  margin-top: 7px;
 }
 
-/* ===== NAVIGATION ===== */
+/* Navigation Links */
 
 .navigation {
   flex: 1;
@@ -185,13 +122,14 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
   list-style: none;
-  gap: 28px;
+  gap: 27px;
 }
 
 .navigation ul li a {
   color: #e5dff0;
   text-decoration: none;
   font-size: 15px;
+  font-weight: 500;
   padding: 12px 0;
   position: relative;
   transition: color 0.3s ease;
@@ -202,7 +140,6 @@ nav ul li a:hover {
   color: #c6aef4;
 }
 
-/* Active Link Underline */
 .navigation ul li a.active::after {
   content: "";
   position: absolute;
@@ -215,18 +152,17 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-/* ===== ACTION BUTTONS ===== */
+/* Navbar Action Icons */
 
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 13px;
 }
 
-/* Round Icon Background */
 .icon-button {
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   background: rgba(255, 255, 255, 0.08);
   border-radius: 50%;
   display: flex;
@@ -235,6 +171,7 @@ nav ul li a:hover {
   position: relative;
   text-decoration: none;
   transition: 0.3s ease;
+  flex-shrink: 0;
 }
 
 .icon-button:hover {
@@ -243,6 +180,7 @@ nav ul li a:hover {
 }
 
 /* Search Icon */
+
 .search-icon span {
   width: 16px;
   height: 16px;
@@ -264,9 +202,10 @@ nav ul li a:hover {
 }
 
 /* User Icon */
+
 .user-head {
   position: absolute;
-  top: 11px;
+  top: 10px;
   width: 11px;
   height: 11px;
   background: #ffffff;
@@ -275,7 +214,7 @@ nav ul li a:hover {
 
 .user-body {
   position: absolute;
-  bottom: 10px;
+  bottom: 9px;
   width: 23px;
   height: 13px;
   background: #ffffff;
@@ -283,6 +222,7 @@ nav ul li a:hover {
 }
 
 /* Cart Icon */
+
 .cart-icon .cart-basket {
   width: 19px;
   height: 15px;
@@ -315,7 +255,7 @@ nav ul li a:hover {
 
 .cart-wheel {
   position: absolute;
-  bottom: 12px;
+  bottom: 11px;
   width: 5px;
   height: 5px;
   background: #ffffff;
@@ -323,14 +263,13 @@ nav ul li a:hover {
 }
 
 .wheel-one {
-  left: 17px;
+  left: 16px;
 }
 
 .wheel-two {
-  right: 15px;
+  right: 14px;
 }
 
-/* Cart Count */
 .cart-count {
   position: absolute;
   top: -3px;
@@ -347,12 +286,12 @@ nav ul li a:hover {
   justify-content: center;
 }
 
-/* ===== EXPLORE BUTTON ===== */
+/* Navbar Explore Button */
 
-.explore-btn {
+.nav-explore-btn {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 14px;
   padding: 15px 22px;
   background: #dccaf8;
   color: #30264a;
@@ -360,95 +299,126 @@ nav ul li a:hover {
   border-radius: 30px;
   text-decoration: none;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   transition: 0.3s ease;
   white-space: nowrap;
 }
 
-.explore-btn span {
+.nav-explore-btn span {
   font-size: 20px;
 }
 
-.explore-btn:hover {
+.nav-explore-btn:hover {
   background: #ffffff;
   border-color: #ffffff;
   transform: translateY(-3px);
 }
 
-/* ===== HERO SECTION ===== */
+/* =========================
+   HERO SECTION
+========================= */
 
 .hero {
-  background-color: #f7f3fc;
-  padding: 70px 8% 35px;
-  overflow: hidden;
-  position: relative;
+  width: 100%;
+  padding: 0 5%;
+  background: #f5f0fa;
 }
-
-/* Hero Container */
 
 .hero-container {
-  max-width: 1600px;
-  min-height: 550px;
+  width: 100%;
+  max-width: 1500px;
+  height: 620px;
   margin: 0 auto;
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 35px;
+  isolation: isolate;
 }
 
-/* Hero Content */
+/* Large Hero Image */
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 82%;
+  height: 100%;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Gradient Overlay */
+
+.hero-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(
+    to right,
+    #f5f0fa 0%,
+    #f5f0fa 28%,
+    rgba(245, 240, 250, 0.96) 38%,
+    rgba(245, 240, 250, 0.75) 49%,
+    rgba(245, 240, 250, 0.18) 68%,
+    rgba(245, 240, 250, 0) 100%
+  );
+}
+
+/* Hero Text */
 
 .hero-content {
-  width: 43%;
-  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+  width: 52%;
+  padding: 45px 0 45px 2%;
 }
-
-/* Small Tag */
 
 .hero-tag {
   display: flex;
   align-items: center;
   gap: 15px;
-  color: #8874b5;
+  color: #9676d5;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 3px;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .hero-tag span {
   width: 55px;
   height: 3px;
-  background-color: #9b85c4;
-  border-radius: 5px;
+  background: #9676d5;
 }
-
-/* Main Heading */
 
 .hero-content h2 {
   color: #30264a;
-  font-family: Arial, sans-serif;
-  font-size: 64px;
+  font-size: 58px;
+  line-height: 1.12;
   font-weight: 800;
-  line-height: 1.15;
-  margin-bottom: 22px;
+  margin: 0 0 20px;
 }
-
-/* Second Line */
 
 .hero-content h2 span {
   display: block;
   color: #9676d5;
 }
 
-/* Description */
-
 .hero-content p {
-  color: #777183;
+  max-width: 520px;
+  color: #756b81;
   font-size: 18px;
   line-height: 1.7;
-  max-width: 600px;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 /* Hero Buttons */
@@ -459,257 +429,219 @@ nav ul li a:hover {
   gap: 20px;
 }
 
-/* Common Button */
-
 .hero-buttons .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
-  padding: 18px 30px;
+  gap: 12px;
+  padding: 16px 27px;
   border-radius: 35px;
   text-decoration: none;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   transition: 0.3s ease;
+  white-space: nowrap;
 }
 
-/* Shop Now */
-
 .hero-buttons .shop-btn {
-  color: white;
-  background-color: #9676d5;
+  background: #9676d5;
+  color: #ffffff;
   border: 2px solid #9676d5;
 }
 
 .hero-buttons .shop-btn span {
-  background-color: white;
-  color: #9676d5;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
   align-items: center;
-  font-size: 20px;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #9676d5;
 }
 
-/* Explore Collection */
-
 .hero-buttons .explore-btn {
-  color: #8874b5;
-  background-color: transparent;
+  background: rgba(255, 255, 255, 0.45);
+  color: #9676d5;
   border: 2px solid #a78bd6;
 }
 
-/* Button Hover */
-
-.hero-buttons .shop-btn:hover {
-  background-color: #7658b2;
-  border-color: #7658b2;
+.hero-buttons .btn:hover {
   transform: translateY(-3px);
 }
 
-.hero-buttons .explore-btn:hover {
-  background-color: #eae1f8;
-  transform: translateY(-3px);
-}
-
-/* Hero Dots */
+/* Slider Dots */
 
 .hero-dots {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: 45px;
+  margin-top: 38px;
 }
 
 .hero-dots .dot {
   width: 13px;
   height: 13px;
-  background-color: #d8cce9;
   border-radius: 50%;
+  background: #d8cce9;
 }
 
 .hero-dots .dot.active {
   width: 28px;
-  background-color: #9676d5;
   border-radius: 20px;
+  background: #9676d5;
 }
 
-/* Hero Image */
+/* =========================
+   PRODUCTS SECTION
+========================= */
 
-.hero-image {
-  width: 57%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-image img {
-  width: 100%;
-  max-width: 850px;
-  height: 550px;
-  object-fit: contain;
-  object-position: center;
-}
-
-/* Products Section */
 .products {
-  background-color: #f5f0fa;
-  padding: 80px 8%;
+  width: 100%;
+  padding: 45px 5% 80px;
+  background: #f5f0fa;
 }
 
-/* Products Container */
 .products-container {
-  max-width: 1400px;
+  max-width: 1350px;
   margin: 0 auto;
 }
 
-/* Section Heading */
 .products-heading {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 45px;
+  align-items: flex-end;
+  margin-bottom: 30px;
 }
 
-/* Small Tag */
 .section-tag {
-  color: #9b85c4;
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 2px;
+  display: inline-block;
+  color: #9676d5;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
 }
 
-/* Main Heading */
 .products-heading h2 {
-  color: #46345e;
-  font-size: 36px;
-  margin: 12px 0;
+  color: #30264a;
+  font-size: 34px;
+  margin-bottom: 10px;
 }
 
-/* Description */
 .products-heading p {
   color: #756b81;
   font-size: 15px;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
-/* View All Link */
 .view-all {
-  color: #6f5597;
+  color: #7050ad;
   text-decoration: none;
-  font-weight: bold;
-  border-bottom: 2px solid #9b85c4;
-  padding-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #9676d5;
 }
 
 /* Product Grid */
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  gap: 25px;
 }
 
-/* Product Card */
 .product-card {
-  background-color: #ffffff;
-  border: 1px solid #eae2f3;
-  border-radius: 18px;
-  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e5d9f1;
+  border-radius: 15px;
+  padding: 12px;
   text-align: center;
   transition: 0.3s ease;
+  overflow: hidden;
 }
 
-/* Card Hover */
 .product-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(111, 85, 151, 0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(75, 53, 112, 0.12);
 }
 
-/* Product Image Area */
+/* Product Image */
+
 .product-image {
-  height: 280px;
-  background-color: #eae2f3;
-  margin: 12px;
-  border-radius: 12px;
+  height: 260px;
+  background: #eee5f6;
+  border-radius: 10px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
-/* Product Image */
 .product-image img {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  transition: 0.3s ease;
+  display: block;
+  padding: 12px;
 }
 
-/* Image Hover */
-.product-card:hover .product-image img {
-  transform: scale(1.06);
-}
-
-/* Product Badge */
 .product-badge {
   position: absolute;
   top: 12px;
   left: 12px;
-  background-color: #9b85c4;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 20px;
+  background: #9676d5;
+  color: #ffffff;
   font-size: 11px;
+  padding: 6px 10px;
+  border-radius: 15px;
 }
 
-/* Add Button */
 .add-btn {
   position: absolute;
-  bottom: -18px;
+  bottom: -14px;
   left: 50%;
   transform: translateX(-50%);
-  width: 38px;
-  height: 38px;
-  background-color: #6f5597;
-  color: white;
-  border-radius: 50%;
+  width: 34px;
+  height: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 25px;
+  background: #7050ad;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
   text-decoration: none;
-  transition: 0.3s;
+  font-size: 20px;
+  transition: 0.3s ease;
 }
 
-/* Add Button Hover */
 .add-btn:hover {
-  background-color: #9b85c4;
+  background: #9676d5;
 }
 
 /* Product Information */
+
 .product-info {
-  padding: 25px 15px 22px;
+  padding: 24px 8px 10px;
 }
 
-/* Product Name */
 .product-info h3 {
-  color: #46345e;
-  font-size: 20px;
-  margin-bottom: 8px;
+  color: #30264a;
+  font-size: 19px;
+  margin-bottom: 7px;
 }
 
-/* Product Description */
 .product-info p {
-  color: #8b8295;
+  color: #8a8095;
   font-size: 13px;
   margin-bottom: 12px;
 }
 
-/* Product Price */
 .product-info h4 {
-  color: #6f5597;
-  font-size: 19px;
+  color: #7050ad;
+  font-size: 17px;
+  font-weight: 700;
 }
