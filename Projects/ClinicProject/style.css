@@ -484,3 +484,503 @@ body {
   background-color: #9870c8;
   color: #ffffff;
 }
+
+/* Appointment Section */
+.appointment {
+  width: 100%;
+  padding: 90px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+  background-color: #f5f0fc;
+}
+
+/* Appointment Content */
+.appointment-content {
+  width: 42%;
+}
+
+.appointment-tag {
+  color: #9870c8;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.appointment-content h2 {
+  color: #332447;
+  font-size: 38px;
+  line-height: 1.3;
+  margin: 18px 0;
+}
+
+.appointment-content > p {
+  color: #71657e;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+/* Appointment Details */
+.appointment-detail {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.detail-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9ddf8;
+  color: #9870c8;
+  border-radius: 10px;
+  font-size: 22px;
+}
+
+.appointment-detail h3 {
+  color: #332447;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.appointment-detail p {
+  color: #71657e;
+  font-size: 14px;
+}
+
+/* Appointment Form */
+.appointment-form {
+  width: 53%;
+  background-color: #ffffff;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 10px 35px rgba(105, 70, 150, 0.08);
+}
+
+.appointment-form h3 {
+  color: #332447;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+/* Form Rows */
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: #40364f;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 9px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #e5d8f3;
+  border-radius: 7px;
+  background-color: #fcfaff;
+  color: #40364f;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #9870c8;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #9870c8;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #7952aa;
+}
+
+/* Contact Section */
+.contact {
+  width: 100%;
+  padding: 80px 7%;
+  background-color: #f5f0fc;
+}
+
+/* Contact Heading */
+.contact-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.contact-heading span {
+  color: #9870c8;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.contact-heading h2 {
+  color: #332447;
+  font-size: 38px;
+  margin: 15px 0;
+}
+
+.contact-heading p {
+  color: #71657e;
+  font-size: 16px;
+}
+
+/* Contact Information Cards */
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.contact-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #eee5f8;
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(105, 70, 150, 0.1);
+}
+
+.contact-icon {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ede2fa;
+  color: #9870c8;
+  border-radius: 50%;
+  font-size: 24px;
+}
+
+.contact-card h3 {
+  color: #332447;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  color: #71657e;
+  font-size: 14px;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 35px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 35px rgba(105, 70, 150, 0.08);
+}
+
+.contact-form h3 {
+  color: #332447;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.contact-row {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-group label {
+  display: block;
+  color: #40364f;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 9px;
+}
+
+.contact-group input,
+.contact-group textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #e5d8f3;
+  border-radius: 7px;
+  background-color: #fcfaff;
+  color: #40364f;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  outline: none;
+}
+
+.contact-group input:focus,
+.contact-group textarea:focus {
+  border-color: #9870c8;
+}
+
+.contact-group textarea {
+  resize: vertical;
+}
+
+/* Send Message Button */
+.contact-submit {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  background-color: #9870c8;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-submit:hover {
+  background-color: #7952aa;
+}
+
+/* Footer */
+.footer {
+  background-color: #302442;
+  padding: 65px 7% 0;
+  color: #ffffff;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: 40px;
+  padding-bottom: 45px;
+}
+
+/* Footer About */
+.footer-about h2 {
+  color: #ffffff;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.footer-about h2 span {
+  color: #b99ae0;
+}
+
+.footer-about p {
+  color: #d0c5db;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* Footer Links */
+.footer-links h3,
+.footer-contact h3 {
+  font-size: 18px;
+  margin-bottom: 22px;
+  color: #ffffff;
+}
+
+.footer-links a {
+  display: block;
+  text-decoration: none;
+  color: #d0c5db;
+  font-size: 14px;
+  margin-bottom: 14px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #c6a5f0;
+  padding-left: 5px;
+}
+
+/* Footer Contact */
+.footer-contact p {
+  color: #d0c5db;
+  font-size: 14px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.social-links a {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #514064;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background-color: #9870c8;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid #514064;
+  padding: 22px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.footer-bottom p {
+  color: #d0c5db;
+  font-size: 13px;
+}
+
+/* Testimonials Section */
+.testimonials {
+  width: 100%;
+  padding: 85px 7%;
+  background-color: #f5f0fc;
+}
+
+/* Testimonials Heading */
+.testimonials-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.testimonials-heading span {
+  color: #9870c8;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.testimonials-heading h2 {
+  color: #332447;
+  font-size: 38px;
+  margin: 15px 0;
+}
+
+.testimonials-heading p {
+  color: #71657e;
+  font-size: 16px;
+}
+
+/* Testimonials Container */
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 13px;
+  border: 1px solid #eee5f8;
+  transition: 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 30px rgba(105, 70, 150, 0.12);
+}
+
+/* Review Stars */
+.review-stars {
+  color: #e9b44c;
+  font-size: 21px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+/* Review Text */
+.review-text {
+  color: #71657e;
+  font-size: 15px;
+  line-height: 1.9;
+  min-height: 115px;
+  margin-bottom: 25px;
+}
+
+/* Patient Information */
+.patient-info {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-top: 1px solid #eee5f8;
+  padding-top: 20px;
+}
+
+.patient-avatar {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9ddf8;
+  color: #7952aa;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.patient-info h3 {
+  color: #332447;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.patient-info span {
+  color: #9870c8;
+  font-size: 13px;
+}
