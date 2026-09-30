@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#hw {
+  width: 400px;
+  height: 2.5rem;
+  border: 1px solid #000;
+  text-wrap-mode: nowrap;
+  overflow: hidden;
+  background-color: green;
+  transition:
+    width 2s 1s,
+    background-colour 2s 1s;
+}
+#hw :hover {
+  width: 600px;
+  background-color: red;
+  transition:
+    width 2s 1s,
+    background-colour 2s 1s;
+}
+#welcome {
+  color: red;
+}
