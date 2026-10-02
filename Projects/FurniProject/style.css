@@ -1300,3 +1300,254 @@ body {
 .footer {
   margin-top: 0;
 }
+
+/* Button Hover Effects */
+.hero-content a,
+.nav-explore-btn,
+.newsletter button {
+  transition: all 0.3s ease;
+}
+
+.hero-content a:hover,
+.nav-explore-btn:hover,
+.newsletter button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* Navigation Hover */
+.navigation a {
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: #c9adf5;
+}
+
+/* Footer Links Hover */
+.footer a {
+  transition:
+    color 0.3s ease,
+    padding-left 0.3s ease;
+}
+
+.footer a:hover {
+  color: #c9adf5;
+  padding-left: 5px;
+}
+
+/* Social Icons Hover */
+.footer .social-icons a {
+  transition: all 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  background-color: #9676d5;
+  color: #ffffff;
+  transform: translateY(-4px);
+}
+
+/* ==============================
+   TABLET RESPONSIVENESS
+   ============================== */
+
+@media screen and (max-width: 1024px) {
+  .hero-container,
+  .products-container,
+  .why-choose-container,
+  .about-container,
+  .footer-container {
+    width: 90%;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .why-choose {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about-us {
+    gap: 30px;
+  }
+
+  .newsletter {
+    width: 90%;
+  }
+
+  .footer-container {
+    gap: 30px;
+  }
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 768px) {
+  /* Header */
+  .navbar {
+    flex-wrap: wrap;
+    padding: 15px 5%;
+    gap: 15px;
+  }
+
+  .navigation {
+    order: 3;
+    width: 100%;
+  }
+
+  .navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+  }
+
+  .nav-actions {
+    margin-left: auto;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 50px 0;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-content,
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  /* Products */
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  /* Why Choose Us */
+  .why-choose-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* About Section */
+  .about-us {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-us img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Testimonials */
+  .testimonials-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Newsletter */
+  .newsletter {
+    padding: 35px 25px;
+    text-align: center;
+  }
+
+  .newsletter form {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Footer */
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+/* SMALL MOBILE SCREENS */
+
+@media screen and (max-width: 480px) {
+  .brand {
+    font-size: 22px;
+  }
+
+  .navigation ul {
+    gap: 10px;
+  }
+
+  .navigation a {
+    font-size: 13px;
+  }
+
+  .hero-content h1 {
+    font-size: 29px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .hero-content .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-choose-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer .social-icons {
+    justify-content: center;
+  }
+
+  .newsletter h2 {
+    font-size: 27px;
+  }
+
+  .newsletter p {
+    font-size: 14px;
+  }
+}
