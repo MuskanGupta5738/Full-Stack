@@ -1595,3 +1595,125 @@ img {
     height: 250px;
   }
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .hero-container,
+    .products-container,
+    .why-choose-container,
+    .about-us,
+    .testimonials,
+    .newsletter,
+    .footer-container {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero-content,
+    .product-card,
+    .why-choose-card,
+    .testimonial-card {
+        min-width: 0;
+    }
+
+    .hero-content h1,
+    .products-heading h2,
+    .about-us h2,
+    .newsletter h2 {
+        overflow-wrap: break-word;
+    }
+
+    .product-grid,
+    .why-choose-container,
+    .footer-container {
+        width: 100%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(48, 38, 74, 0.12);
+}
+
+.product-card img {
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.04);
+}
+
+.why-choose-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-choose-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(48, 38, 74, 0.1);
+}
+
+.testimonial-card {
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 550px;
+    margin: 25px auto 0;
+}
+
+.newsletter-form input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px 16px;
+    border: 1px solid #d8c9ed;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+}
+
+.newsletter-form input:focus {
+    border-color: #9676d5;
+}
+
+.newsletter-form button {
+    padding: 14px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #9676d5;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background: #574288;
+}
+
+@media screen and (max-width: 480px) {
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+}
