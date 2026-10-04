@@ -12,19 +12,20 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
 
   <body>
     <!-- Header -->
 
-    <header class="main-header">
+    <header class="main-header home-header">
       <div class="navbar">
         <a href="index.html" class="brand">
           <div class="brand-mark">
-            <span class="chair-back"></span>
-            <span class="chair-seat"></span>
-            <span class="chair-leg left"></span>
-            <span class="chair-leg right"></span>
+            <i class="fa-solid fa-house"></i>
           </div>
 
           <div class="brand-text">
@@ -47,11 +48,11 @@
 
         <div class="nav-actions">
           <a href="#products" class="icon-button" aria-label="Search">
-            <i class="bi bi-search"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
           </a>
 
           <a href="account.html" class="icon-button" aria-label="Account">
-            <i class="bi bi-person"></i>
+            <i class="fa-regular fa-user"></i>
           </a>
 
           <a
@@ -59,7 +60,7 @@
             class="icon-button cart-icon"
             aria-label="Shopping cart"
           >
-            <i class="bi bi-cart3"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
             <span class="cart-count">3</span>
           </a>
 
@@ -83,9 +84,12 @@
     <section class="hero" id="home">
       <div class="hero-container">
         <div class="hero-content">
-          <span class="hero-tag"
-            >⌂ &nbsp; STYLISH FURNITURE &nbsp; • &nbsp; MODERN LIVING</span
-          >
+          <span class="hero-tag">
+            <span>🏠</span>
+            <span>STYLISH FURNITURE</span>
+            <span>•</span>
+            <span>MODERN LIVING</span>
+          </span>
 
           <h1>
             Make Your Home
@@ -99,26 +103,24 @@
 
           <div class="hero-buttons">
             <a href="all-products.html" class="btn-primary">
-              <i class="bi bi-cart3"></i> Shop Now
-              <i class="bi bi-arrow-right"></i>
+              <span>🛍️ </span> Shop Now
+              <span>→</span>
             </a>
 
-            <a href="#products" class="btn-secondary">
-              <i class="bi bi-grid"></i> Explore
-            </a>
+            <a href="#products" class="btn-secondary"> Explore </a>
           </div>
 
           <div class="hero-features">
             <div class="hero-feature">
-              <i class="bi bi-truck"></i>
+              <span>🚚</span>
               <span>Free Delivery</span>
             </div>
             <div class="hero-feature">
-              <i class="bi bi-shield-check"></i>
+              <span>🛡️</span>
               <span>Secure Payment</span>
             </div>
             <div class="hero-feature">
-              <i class="bi bi-headset"></i>
+              <span>🎧</span>
               <span>24/7 Support</span>
             </div>
           </div>
@@ -183,6 +185,18 @@
               <a href="cart.html">Add to Cart</a>
             </div>
           </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="Images/chair4.png" alt="Modern Chair" />
+            </div>
+            <div class="product-info">
+              <h3>Modern Chair</h3>
+              <p>Elegant design with a comfortable seating experience.</p>
+              <h4>₹3,200</h4>
+              <a href="cart.html">Add to Cart</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -200,7 +214,7 @@
         <div class="why-grid">
           <div class="why-card">
             <div class="why-icon">
-              <i class="bi bi-truck"></i>
+              <span>🚚</span>
             </div>
             <h3>Fast & Free Shipping</h3>
             <p>Enjoy quick and free delivery right to your doorstep.</p>
@@ -208,7 +222,7 @@
 
           <div class="why-card">
             <div class="why-icon">
-              <i class="bi bi-bag-check"></i>
+              <span>🛍️</span>
             </div>
             <h3>Easy to Shop</h3>
             <p>
@@ -218,7 +232,7 @@
 
           <div class="why-card">
             <div class="why-icon">
-              <i class="bi bi-headset"></i>
+              <span>🎧</span>
             </div>
             <h3>24/7 Support</h3>
             <p>Our team is here to help you whenever you need assistance.</p>
@@ -226,7 +240,7 @@
 
           <div class="why-card">
             <div class="why-icon">
-              <i class="bi bi-arrow-repeat"></i>
+              <span>🔄</span>
             </div>
             <h3>Hassle-Free Returns</h3>
             <p>Shop with confidence with an easy return process.</p>
@@ -328,11 +342,7 @@
               is beautiful, comfortable and worth every penny."
             </p>
             <div class="customer">
-              <img
-                src="Images/customer1.jpg"
-                alt="Muskan Gupta"
-                class="customer-avatar"
-              />
+              <img src="Images/customer1.jpg" alt="Muskan Gupta" />
               <div class="customer-info">
                 <h4>Muskan Gupta</h4>
                 <p>Happy Customer</p>
@@ -347,11 +357,7 @@
             </p>
 
             <div class="customer">
-              <img
-                src="Images/customer2.jpg"
-                alt="Khushi Gupta"
-                class="customer-avatar"
-              />
+              <img src="Images/customer2.jpg" alt="Khushi Gupta" />
               <div class="customer-info">
                 <h4>Khushi Gupta</h4>
                 <p>Happy Customer</p>
@@ -365,11 +371,7 @@
               combination of style and comfort."
             </p>
             <div class="customer">
-              <img
-                src="Images/customer3.jpg"
-                alt="Priya Gupta"
-                class="customer-avatar"
-              />
+              <img src="Images/customer3.jpg" alt="Priya Gupta" />
               <div class="customer-info">
                 <h4>Priya Gupta</h4>
                 <p>Happy Customer</p>
@@ -411,18 +413,10 @@
           </p>
 
           <div class="footer-socials">
-            <a href="https://www.facebook.com/" aria-label="Facebook">
-              <i class="bi bi-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/" aria-label="Instagram">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/" aria-label="LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
-            <a href="https://www.twitter.com/" aria-label="Twitter">
-              <i class="bi bi-twitter-x"></i>
-            </a>
+            <a href="https://www.facebook.com/" aria-label="Facebook">ⓕ</a>
+            <a href="https://www.instagram.com/" aria-label="Instagram">◎</a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a>
+            <a href="https://www.twitter.com/" aria-label="X">𝕏</a>
           </div>
         </div>
 
@@ -439,9 +433,9 @@
 
         <div class="footer-contact">
           <h3>Contact Us</h3>
-          <p><i class="bi bi-geo-alt"></i> Bhopal, Madhya Pradesh, India</p>
-          <p><i class="bi bi-envelope"></i> support@homify.com</p>
-          <p><i class="bi bi-telephone"></i> +91 98765 43210</p>
+          <p>📍 Bhopal, Madhya Pradesh, India</p>
+          <p>✉️ support@homify.com</p>
+          <p>📞 +91 98765 43210</p>
         </div>
       </div>
 
