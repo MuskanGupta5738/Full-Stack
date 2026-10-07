@@ -9,298 +9,279 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
   <body>
-    <header class="main-header products-header">
-      <nav class="navbar">
+    <header class="main-header home-header">
+      <div class="navbar">
+        <!-- Logo -->
         <a href="index.html" class="brand">
-          <!-- <div class="brand-mark"></div> -->
           <div class="brand-mark">
             <i class="fa-solid fa-house"></i>
           </div>
+
           <div class="brand-text">
             <h1>Homify</h1>
             <p>HOME DECOR LIVING</p>
           </div>
         </a>
 
-        <div class="navigation">
+        <!-- Navigation -->
+        <nav class="navigation">
           <ul>
-            <li><a href="index.html#home">Home</a></li>
-            <li><a href="./all-products.html">Shop</a></li>
-            <li><a href="index.html#gallery">Gallery</a></li>
-            <li><a href="index.html#about">About Us</a></li>
-            <li><a href="index.html#contact">Contact Us</a></li>
-          </ul>
-        </div>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
 
+            <li>
+              <a href="all-products.html">Shop</a>
+            </li>
+
+            <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
+
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Right Side -->
         <div class="nav-actions">
-          <a href="index.html#products" class="nav-explore-btn">
-            Back to Home <i class="arrow">→</i>
+          <!-- Search -->
+          <a href="index.html#products" class="icon-button" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+
+          <!-- User -->
+          <a href="#" class="icon-button" aria-label="Account">
+            <i class="fa-regular fa-user"></i>
+          </a>
+
+          <!-- Cart -->
+          <a href="#" class="icon-button cart-icon" aria-label="Shopping cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">3</span>
+          </a>
+
+          <!-- Explore -->
+          <a href="all-products.html" class="nav-explore-btn">
+            Explore Now <span>→</span>
           </a>
         </div>
-      </nav>
+      </div>
     </header>
 
     <section class="products all-products">
       <div class="products-container">
+        <!-- ================= SHOP HEADING ================= -->
+
         <div class="products-heading">
           <div>
             <span class="section-tag">OUR COLLECTION</span>
+
             <h2>Explore All Products</h2>
+
             <p>Find beautiful furniture to make your home special.</p>
+          </div>
+
+          <!-- ================= CATEGORY FILTER ================= -->
+
+          <div class="category-filter">
+            <input type="radio" name="category" id="filter-all" checked />
+            <label for="filter-all">All Products</label>
+
+            <input type="radio" name="category" id="filter-chairs" />
+            <label for="filter-chairs">Chairs</label>
+
+            <input type="radio" name="category" id="filter-sofas" />
+            <label for="filter-sofas">Sofas</label>
+
+            <input type="radio" name="category" id="filter-tables" />
+            <label for="filter-tables">Tables</label>
+
+            <input type="radio" name="category" id="filter-decor" />
+            <label for="filter-decor">Home Decor</label>
           </div>
         </div>
 
-        <div class="category-filter">
-          <input type="radio" name="category" id="filter-all" checked />
-          <label for="filter-all">All Products</label>
-
-          <input type="radio" name="category" id="filter-chairs" />
-          <label for="filter-chairs">Chairs</label>
-
-          <input type="radio" name="category" id="filter-sofas" />
-          <label for="filter-sofas">Sofas</label>
-
-          <input type="radio" name="category" id="filter-tables" />
-          <label for="filter-tables">Tables</label>
-
-          <input type="radio" name="category" id="filter-decor" />
-          <label for="filter-decor">Home Decor</label>
-        </div>
+        <!-- ================= PRODUCT GRID ================= -->
 
         <div class="product-grid">
+          <!-- PRODUCT 1 -->
+
           <div class="product-card chair">
             <div class="product-image">
               <img src="Images/chair1.png" alt="Luna Chair" />
-              <span class="product-badge">Popular</span>
+
+              <span class="product-badge"> Popular </span>
             </div>
+
             <div class="product-info">
               <h3>Luna Chair</h3>
+
               <p>Modern comfort for your home</p>
+
               <h4>$75.00</h4>
             </div>
           </div>
+
+          <!-- PRODUCT 2 -->
 
           <div class="product-card chair">
             <div class="product-image">
               <img src="Images/chair2.png" alt="Mira Lounge" />
             </div>
+
             <div class="product-info">
               <h3>Mira Lounge</h3>
+
               <p>Relax in timeless elegance</p>
+
               <h4>$95.00</h4>
             </div>
           </div>
+
+          <!-- PRODUCT 3 -->
 
           <div class="product-card chair">
             <div class="product-image">
               <img src="Images/chair3.png" alt="Nova Chair" />
             </div>
+
             <div class="product-info">
               <h3>Nova Chair</h3>
+
               <p>Simple style, everyday comfort</p>
+
               <h4>$65.00</h4>
             </div>
           </div>
 
-          <div class="product-card">
+          <!-- PRODUCT 4 -->
+
+          <div class="product-card chair">
             <div class="product-image">
-              <!-- <span class="product-badge">New</span> -->
-              <img src="./Images/chair4.png" alt="Modern Lavender Chair" />
+              <img src="Images/chair4.png" alt="Modern Lounge Chair" />
             </div>
 
             <div class="product-info">
               <h3>Modern Lounge Chair</h3>
-              <p>Style and cozy chair to elevate your livin space</p>
+
+              <p>Style and cozy chair to elevate your living space</p>
+
               <h4>$105.00</h4>
-
-              <!-- <p class="product-price">$</p> -->
-              <!-- <button class="add-to-cart">Add to Cart</button> -->
             </div>
           </div>
+
+          <!-- PRODUCT 5 -->
 
           <div class="product-card sofa">
             <div class="product-image">
               <img src="Images/gallery1.png" alt="Modern Sofa" />
             </div>
+
             <div class="product-info">
               <h3>Modern Sofa</h3>
+
               <p>Elegant seating for your living room</p>
+
               <h4>$250.00</h4>
             </div>
           </div>
+
+          <!-- PRODUCT 6 -->
 
           <div class="product-card chair">
             <div class="product-image">
               <img src="Images/gallery2.png" alt="Comfort Chair" />
             </div>
+
             <div class="product-info">
               <h3>Comfort Chair</h3>
+
               <p>Comfort meets modern design</p>
+
               <h4>$110.00</h4>
             </div>
           </div>
+
+          <!-- PRODUCT 7 -->
 
           <div class="product-card table">
             <div class="product-image">
               <img src="Images/gallery4.png" alt="Modern Table" />
             </div>
+
             <div class="product-info">
               <h3>Modern Table</h3>
+
               <p>A stylish touch to your space</p>
+
               <h4>$135.00</h4>
             </div>
           </div>
+
+          <!-- PRODUCT 8 -->
 
           <div class="product-card decor">
             <div class="product-image">
               <img src="Images/gallery5.png" alt="Elegant Bedroom" />
             </div>
+
             <div class="product-info">
               <h3>Elegant Bedroom</h3>
+
               <p>Bring comfort to your bedroom</p>
+
               <h4>$320.00</h4>
             </div>
           </div>
+
+          <!-- PRODUCT 9 -->
 
           <div class="product-card decor">
             <div class="product-image">
               <img src="Images/gallery6.png" alt="Home Interior" />
             </div>
+
             <div class="product-info">
               <h3>Home Interior</h3>
+
               <p>Beautiful details for modern homes</p>
+
               <h4>$180.00</h4>
             </div>
           </div>
+
+          <!-- PRODUCT 10 -->
 
           <div class="product-card sofa">
             <div class="product-image">
               <img src="Images/gallery3.png" alt="Living Room Set" />
             </div>
+
             <div class="product-info">
               <h3>Living Room Set</h3>
+
               <p>Make your living space inviting</p>
-              <h4>$450.00</h4>
-            </div>
-          </div>
-        </div>
 
-        <div class="category-filter">
-          <input type="radio" name="category" id="filter-all" checked />
-          <label for="filter-all">All Products</label>
-
-          <input type="radio" name="category" id="filter-chairs" />
-          <label for="filter-chairs">Chairs</label>
-
-          <input type="radio" name="category" id="filter-sofas" />
-          <label for="filter-sofas">Sofas</label>
-
-          <input type="radio" name="category" id="filter-tables" />
-          <label for="filter-tables">Tables</label>
-
-          <input type="radio" name="category" id="filter-decor" />
-          <label for="filter-decor">Home Decor</label>
-        </div>
-
-        <div class="product-grid">
-          <div class="product-card chair">
-            <div class="product-image">
-              <img src="Images/chair1.png" alt="Luna Chair" />
-              <span class="product-badge">Popular</span>
-            </div>
-            <div class="product-info">
-              <h3>Luna Chair</h3>
-              <p>Modern comfort for your home</p>
-              <h4>$75.00</h4>
-            </div>
-          </div>
-
-          <div class="product-card chair">
-            <div class="product-image">
-              <img src="Images/chair2.png" alt="Mira Lounge" />
-            </div>
-            <div class="product-info">
-              <h3>Mira Lounge</h3>
-              <p>Relax in timeless elegance</p>
-              <h4>$95.00</h4>
-            </div>
-          </div>
-
-          <div class="product-card chair">
-            <div class="product-image">
-              <img src="Images/chair3.png" alt="Nova Chair" />
-            </div>
-            <div class="product-info">
-              <h3>Nova Chair</h3>
-              <p>Simple style, everyday comfort</p>
-              <h4>$65.00</h4>
-            </div>
-          </div>
-
-          <div class="product-card sofa">
-            <div class="product-image">
-              <img src="Images/gallery1.png" alt="Modern Sofa" />
-            </div>
-            <div class="product-info">
-              <h3>Modern Sofa</h3>
-              <p>Elegant seating for your living room</p>
-              <h4>$250.00</h4>
-            </div>
-          </div>
-
-          <div class="product-card chair">
-            <div class="product-image">
-              <img src="Images/gallery2.png" alt="Comfort Chair" />
-            </div>
-            <div class="product-info">
-              <h3>Comfort Chair</h3>
-              <p>Comfort meets modern design</p>
-              <h4>$110.00</h4>
-            </div>
-          </div>
-
-          <div class="product-card table">
-            <div class="product-image">
-              <img src="Images/gallery4.png" alt="Modern Table" />
-            </div>
-            <div class="product-info">
-              <h3>Modern Table</h3>
-              <p>A stylish touch to your space</p>
-              <h4>$135.00</h4>
-            </div>
-          </div>
-
-          <div class="product-card decor">
-            <div class="product-image">
-              <img src="Images/gallery5.png" alt="Elegant Bedroom" />
-            </div>
-            <div class="product-info">
-              <h3>Elegant Bedroom</h3>
-              <p>Bring comfort to your bedroom</p>
-              <h4>$320.00</h4>
-            </div>
-          </div>
-
-          <div class="product-card decor">
-            <div class="product-image">
-              <img src="Images/gallery6.png" alt="Home Interior" />
-            </div>
-            <div class="product-info">
-              <h3>Home Interior</h3>
-              <p>Beautiful details for modern homes</p>
-              <h4>$180.00</h4>
-            </div>
-          </div>
-
-          <div class="product-card sofa">
-            <div class="product-image">
-              <img src="Images/gallery3.png" alt="Living Room Set" />
-            </div>
-            <div class="product-info">
-              <h3>Living Room Set</h3>
-              <p>Make your living space inviting</p>
               <h4>$450.00</h4>
             </div>
           </div>
@@ -308,10 +289,97 @@
       </div>
     </section>
 
+    <!-- ================= FOOTER ================= -->
+
     <footer class="footer">
+      <div class="footer-container">
+        <!-- About -->
+        <div class="footer-about">
+          <h2>Homify</h2>
+
+          <p>
+            Make your home beautiful with our stylish, comfortable and quality
+            furniture.
+          </p>
+
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+
+            <a href="https://www.instagram.com/" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a href="https://www.twitter.com/" aria-label="Twitter">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="all-products.html">Shop</a>
+            </li>
+
+            <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
+
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+
+          <p>
+            <i class="bi bi-geo-alt"></i>
+            Bhopal, Madhya Pradesh, India
+          </p>
+
+          <p>
+            <i class="bi bi-envelope"></i>
+            support@homify.com
+          </p>
+
+          <p>
+            <i class="bi bi-telephone"></i>
+            +91 98765 43210
+          </p>
+        </div>
+      </div>
+
+      <!-- Copyright -->
       <div class="footer-bottom">
-        <p>Copyright © 2026 Homify Furniture. All Rights Reserved.</p>
-        <p>Designed with <span>♥</span> for your home</p>
+        <p>Copyright © 2026 Homify. All Rights Reserved.</p>
       </div>
     </footer>
   </body>

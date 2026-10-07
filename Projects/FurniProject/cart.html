@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cart | Homify</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+
+    <header class="main-header home-header">
+      <div class="navbar">
+        <a href="index.html" class="brand">
+          <div class="brand-mark">
+            <i class="fa-solid fa-house"></i>
+          </div>
+
+          <div class="brand-text">
+            <h1>Homify</h1>
+            <p>HOME DECOR LIVING</p>
+          </div>
+        </a>
+
+        <nav class="navigation">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="all-products.html">Shop</a>
+            </li>
+
+            <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
+
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="index.html#products" class="icon-button" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+
+          <a href="account.html" class="icon-button" aria-label="Account">
+            <i class="fa-regular fa-user"></i>
+          </a>
+
+          <a
+            href="cart.html"
+            class="icon-button cart-icon"
+            aria-label="Shopping cart"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">3</span>
+          </a>
+
+          <a href="all-products.html" class="nav-explore-btn">
+            Explore Now <span>→</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= CART PAGE ================= -->
+
+    <main>
+      <section class="cart-page">
+        <div class="cart-container">
+          <!-- Heading -->
+
+          <div class="cart-heading">
+            <span class="section-tag">MY CART</span>
+
+            <h1>Your Shopping Cart</h1>
+
+            <p>
+              Review your selected furniture and get your home ready with
+              Homify.
+            </p>
+          </div>
+
+          <!-- Cart Layout -->
+
+          <div class="cart-layout">
+            <!-- Cart Items -->
+
+            <div class="cart-items">
+              <!-- Product 1 -->
+
+              <div class="cart-item">
+                <div class="cart-product-image">
+                  <img src="Images/chair1.png" alt="Modern Chair">
+                </div>
+
+                <div class="cart-product-info">
+                  <h3>Modern Chair</h3>
+                  <p>Comfortable modern chair for your living space.</p>
+
+                  <span class="cart-price">₹4,999</span>
+                </div>
+
+                <div class="cart-quantity">
+                  <span>Qty</span>
+                  <strong>1</strong>
+                </div>
+
+                <div class="cart-remove">
+                  <i class="bi bi-trash3"></i>
+                </div>
+              </div>
+
+              <!-- Product 2 -->
+
+              <div class="cart-item">
+                <div class="cart-product-image">
+                  <img src="Images/chair2.png" alt="Luxury Sofa" />
+                </div>
+
+                <div class="cart-product-info">
+                  <h3>Luxury Sofa</h3>
+                  <p>Elegant sofa designed for comfort and style.</p>
+
+                  <span class="cart-price">₹18,999</span>
+                </div>
+
+                <div class="cart-quantity">
+                  <span>Qty</span>
+                  <strong>1</strong>
+                </div>
+
+                <div class="cart-remove">
+                  <i class="bi bi-trash3"></i>
+                </div>
+              </div>
+
+              <!-- Product 3 -->
+
+              <div class="cart-item">
+                <div class="cart-product-image">
+                  <img src="Images/gallery4.png" alt="Modern Table" />
+                </div>
+
+                <div class="cart-product-info">
+                  <h3>Modern Table</h3>
+                  <p>Minimal table with a stylish contemporary design.</p>
+
+                  <span class="cart-price">₹7,499</span>
+                </div>
+
+                <div class="cart-quantity">
+                  <span>Qty</span>
+                  <strong>1</strong>
+                </div>
+
+                <div class="cart-remove">
+                  <i class="bi bi-trash3"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Order Summary -->
+
+            <aside class="cart-summary">
+              <h2>Order Summary</h2>
+
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <strong>₹31,497</strong>
+              </div>
+
+              <div class="summary-row">
+                <span>Shipping</span>
+                <strong>Free</strong>
+              </div>
+
+              <div class="summary-line"></div>
+
+              <div class="summary-row total-row">
+                <span>Total</span>
+                <strong>₹31,497</strong>
+              </div>
+
+              <a href="#" class="checkout-btn">
+                Proceed to Checkout
+                <i class="bi bi-arrow-right"></i>
+              </a>
+
+              <a href="all-products.html" class="continue-shopping">
+                <i class="bi bi-arrow-left"></i>
+                Continue Shopping
+              </a>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- About -->
+
+        <div class="footer-about">
+          <h2>Homify</h2>
+
+          <p>
+            Make your home beautiful with our stylish, comfortable and quality
+            furniture.
+          </p>
+
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/">
+              <i class="bi bi-facebook"></i>
+            </a>
+
+            <a href="https://www.instagram.com/">
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/">
+              <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a href="https://www.twitter.com/">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="all-products.html">Shop</a>
+            </li>
+
+            <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
+
+            <li>
+              <a href="about.html">About Us</a>
+            </li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+
+          <p>
+            <i class="bi bi-geo-alt"></i>
+            Bhopal, Madhya Pradesh, India
+          </p>
+
+          <p>
+            <i class="bi bi-envelope"></i>
+            support@homify.com
+          </p>
+
+          <p>
+            <i class="bi bi-telephone"></i>
+            +91 98765 43210
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright © 2026 Homify. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
