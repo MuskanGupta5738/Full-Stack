@@ -1006,3 +1006,29 @@ html {
 a {
     cursor: pointer;
 }
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9870C8;
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(105, 70, 150, 0.2);
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: #7952AA;
+    transform: translateY(-4px);
+}
