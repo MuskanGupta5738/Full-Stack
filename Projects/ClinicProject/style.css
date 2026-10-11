@@ -984,3 +984,25 @@ body {
   color: #9870c8;
   font-size: 13px;
 }
+
+
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section Navigation Spacing */
+#about,
+#services,
+#doctors,
+#testimonials,
+#appointment,
+#contact {
+    scroll-margin-top: 20px;
+}
+
+/* Consistent Button Cursor */
+a {
+    cursor: pointer;
+}
