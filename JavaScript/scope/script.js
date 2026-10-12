@@ -54,3 +54,15 @@ let i=20;
     console.log(i);
 }
 console.log(i);
+
+
+let prince="kumar";
+function empire(){
+    console.log("the prince of this empire is",prince);
+    let princess ="unknown";
+    console.log("but the prince is",princess);
+}
+empire();
+console.log("princess of prince",prince);
+console.log("is",princess);
+
