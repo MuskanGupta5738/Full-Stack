@@ -38,3 +38,19 @@ function def(){
     console.log("i am function def");
     
 }
+
+
+let i=20;
+{
+    let i=18;
+    {
+        let i=16;
+        {
+            let i=14;
+            console.log(i);  
+        }
+        console.log(i);
+    }
+    console.log(i);
+}
+console.log(i);
