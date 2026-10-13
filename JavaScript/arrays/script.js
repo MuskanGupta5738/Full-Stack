@@ -37,6 +37,32 @@ console.log(arr);
 arr.push();
 console.log(arr);
 
+let abc = arr.filter((item) => item != "himachal");
+console.log(abc);
+
+arr.splice(3, 1);
+console.log(arr);
+
+const Name = "lucky kumar singh rajput";
+console.log(Name);
+
+let x = Name.split(" ");
+console.log(x);
+
+let y = Name.split("u");
+console.log(y);
+
+const arr3 = ["orange","2kg", "nagpur", 20, 99.1, true];
+// for(var i = 0; i < arr.length; i++){
+//     console.log(arr[i]);  
+// }
+
+arr3.forEach((element) => {
+    console.log(element);
+});
+
+
+
 
 
 
