@@ -22,8 +22,23 @@ console.log(ch1);
 const arr = ["apple","2kg","himachal",20,99.1,true];
 
 for(var i = 0; i < arr.length; i++){
-    console.log(arr[i]);
-    
+    console.log(arr[i]);  
 }
+
+console.log(arr[2]);//himanchl
+console.log(arr.at(-4));//himanchl
+
+arr.push("delhi");
+console.log(arr);
+
+arr.pop("delhi");
+console.log(arr);
+
+arr.push();
+console.log(arr);
+
+
+
+
 
 
