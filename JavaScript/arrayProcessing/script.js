@@ -31,3 +31,7 @@ console.log("Fi =", Fi);
 
 var Fix = ar2.findIndex((item) => item === 99);
 console.log("Fix =", Fix);
+
+const ar3 = [2,5,1,6,7,3,9,4,8];
+var s = ar3.sort((a,b) => b-a);
+console.log("S =",s);
