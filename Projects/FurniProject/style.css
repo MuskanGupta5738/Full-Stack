@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Playwrite+BE+WAL+Guides&family=Playwrite+CA+Guides&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -391,6 +392,7 @@ a {
   color: #fff;
   background: #573b8c;
   border-color: #573b8c;
+  transform: translateY(-6px);
 }
 
 .product-grid {
