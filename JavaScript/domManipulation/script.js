@@ -25,7 +25,22 @@ function updateMyName(){
     //  paraText.innerText ="Welcome to your learning portel !! " + myName;
 }
 
+const pic = document.getElementById("somePic");
+pic.src = "./img1.png";
+pic.alt = "img1";
 
+function change(){
+    const myNameInput = document.getElementById("myName");
+    myNameInput.id = "myFullName";
+    myNameInput.type = "password";
+    myNameInput.name = "fullName";
+
+    pic.setAttribute("src","./img2.png");
+    pic.setAttribute("alt","img2.png");
+}
+
+headingText.style.color="red";
+headingText.style.background="yellow";
 
 
 
