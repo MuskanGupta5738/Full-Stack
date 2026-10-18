@@ -12,7 +12,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-  
   </head>
 
   <body>
@@ -376,11 +375,27 @@
           <h2>Subscribe to Our Newsletter</h2>
           <p>Get the latest updates, offers and new arrivals from Homify.</p>
 
-          <form class="newsletter-form" action="#" method="post">
-            <input type="text" name="name" placeholder="Enter your name" />
-            <input type="email" name="email" placeholder="Enter your email" />
+          <form
+            class="newsletter-form"
+            id="newsletterForm"
+            action="#"
+            method="post"
+          >
+            <input
+              type="text"
+              id="newsletterName"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+
+            <input type="email" id="newsletterEmail" name="email" placeholder="Enter your email"required
+            />
+
             <button type="submit">Subscribe</button>
           </form>
+
+          <p id="newsletterMessage"></p>
         </div>
 
         <div class="newsletter-decoration">

@@ -16,3 +16,16 @@ function b2on_off(){
     const b2 = document.getElementById("bulb2");
     b2.classList.toggle("b2");
 }
+
+function b3ChangeColor() {
+  const b3 = document.getElementById("bulb3");
+  const color = document.getElementById("b3Color").value;
+
+  b3.style.backgroundColor = color;
+}
+
+function b3Off() {
+  const b3 = document.getElementById("bulb3");
+
+  b3.style.backgroundColor = "white";
+}
