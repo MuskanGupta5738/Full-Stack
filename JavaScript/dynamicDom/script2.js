@@ -1,9 +1,12 @@
-const ar = ["Muskan","Priya","Prince","Khushi","Dhruv"];
-const list = document.createElement("ol");
+const ar = ["Muskan","Priya","Prince","Khushi","Dhruv","Rachit"];
+const List = document.createElement("ol");
 ar.forEach((item) =>{
     const l = document.createElement("li");
     l.textContent = item;
-    list.appendChild(l);
+    List.appendChild(l);
 
 });
-document.getElementById("mylist").appendChild(list);
+document.getElementById("myList").appendChild(List);
+
+
+
