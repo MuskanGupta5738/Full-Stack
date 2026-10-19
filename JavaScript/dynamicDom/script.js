@@ -11,3 +11,14 @@ P.textContent =
 B.classList.add("btn", "btn-primary");
 B.innerText = "Submit";
 
+const div = document.getElementById("task1");
+
+div.appendChild(H);
+div.appendChild(P);
+div.appendChild(B);
+
+H.append("Welcome");
+
+console.log(H.innerText);
+
+H.remove();
