@@ -21,8 +21,8 @@ headingText.textContent = "Priya";
 
 function updateMyName(){
     const myName = document.getElementById("myName").value.trim();
-    paraText.innerText = paraText.innerText + " !! " + myName;
-    //  paraText.innerText ="Welcome to your learning portel !! " + myName;
+    // paraText.innerText = paraText.innerText + " !! " + myName;
+     paraText.innerText ="Welcome to your learning portel !! " + myName;
 }
 
 const pic = document.getElementById("somePic");
