@@ -1,4 +1,5 @@
-const data = [{
+const data = [
+{
     title: "MyPhone 18",
     description:"very good phone",
     button1:"₹25000",
@@ -28,3 +29,4 @@ const data = [{
     button1:"₹25000",
     button2:"BuyNow"
 }];
+
