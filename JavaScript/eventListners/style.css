@@ -1,0 +1,8 @@
+#eventBubling{
+    border: 1px solid #000;
+    width: 500;
+    div{
+        border: 1px solid #000;
+        padding: 20px;
+    }
+}

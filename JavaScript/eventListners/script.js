@@ -18,9 +18,18 @@ showAssBtn.addEventListener("click", () => {
 stopAssBtn.addEventListener("click", () => {
   showAssBtn.removeEventListener("click", showAssignment);
 
-//   showAssBtn.removeEventListener("click", () => {
-//     assPara.textContent = "plese check your attandence status!";
-//   });
   assPara.textContent = "your assignment deadline is stopped";
 });
+
+const parent =document.getElementById("outer");
+const child =document.getElementById("inner");
+
+parent.addEventListener("click", () => {
+    console.log("parent clicked");
+});
+
+child.addEventListener("click", () => {
+    console.log("child clicked");
+});
+
 
