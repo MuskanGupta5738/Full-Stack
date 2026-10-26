@@ -1,35 +1,53 @@
-const showAssBtn = document.getElementById("showAssignmentNotification");
-const showAttBtn = document.getElementById("showAttendanceNotification");
-const stopAssBtn = document.getElementById("stopAssignmentNotification");
+const showAssBtn = document.getElementById("showAssingmentNotification");
+const showAttBtn = document.getElementById("showAttendenceNotification");
+const stopAssBtn = document.getElementById("StopAssingmentNotification");
 
-const assPara = document.getElementById("AssignmentNotification");
-const attPara = document.getElementById("AttendanceNotification");
+const assPara = document.getElementById("AssingmentNotification");
+const attPara = document.getElementById("AttendenceNotification");
 
-function showAssignment() {
-  assPara.textContent = "your assignment deadline is approaching!";
+function ShowAssingment() {
+  assPara.textContent = "Your assignment deadline is approaching!";
 }
 
-showAssBtn.addEventListener("click", showAssignment);
+showAssBtn.addEventListener("click", ShowAssingment);
 
-showAssBtn.addEventListener("click", () => {
-  attPara.textContent = "plese check your attandence status!";
+showAttBtn.addEventListener("click", () => {
+  attPara.textContent = "Please check your attendance status!";
 });
 
 stopAssBtn.addEventListener("click", () => {
-  showAssBtn.removeEventListener("click", showAssignment);
+  showAssBtn.removeEventListener("click", ShowAssingment);
 
-  assPara.textContent = "your assignment deadline is stopped";
+  assPara.textContent = "Your assignment Notification is Stopped!";
 });
 
-const parent =document.getElementById("outer");
-const child =document.getElementById("inner");
+const parent = document.getElementById("outer");
+const child = document.getElementById("inner");
 
 parent.addEventListener("click", () => {
-    console.log("parent clicked");
+  console.log("Parent Clicked");
 });
 
 child.addEventListener("click", () => {
-    console.log("child clicked");
+  console.log("Child Clicked");
 });
 
+const stip = document.getElementById("EventCapturing");
 
+function view() {
+  console.log("View Button Clicked");
+}
+
+stip.addEventListener("click", view);
+
+document.getElementById("view").addEventListener("click", view);
+
+const parentCard = document.getElementById("EventDelegation");
+
+parentCard.addEventListener("click", (e) => {
+  //   console.log(e.target.tagName);
+
+  if (e.target.tagName === "DIV") {
+    console.log(e.target.textContent);
+  }
+});
