@@ -10,6 +10,12 @@ console.log(Object.keys(ob));
 console.log(Object.values(ob));
 console.log(Object.entries(ob));
 
+const {fullName, year, cgpa} = ob;
+console.log(ob.gender);
+
+console.log(year);
+
+
 
 const ar = [10,20,3,4,40,50]
 console.log(...ar);
@@ -78,3 +84,18 @@ const data = [
 console.log(data);
 console.log(...data);
 
+
+const ar2 = [24,56,47,21, ...ar];
+console.log(ar2);
+ 
+function displayStudent(name, ...subject){
+    console.log("Student :" ,name);
+    console.log("Subjects :" ,subject);
+}
+displayStudent("aarav", "html", "css", "javascript", "bootstrap", "react");
+
+function Sum(...n) {
+    return n.reduce((result = 0, num) => (result += num));
+}
+const ans = Sum(2,3,4,5,6,7,8,9);
+console.log(ans);
