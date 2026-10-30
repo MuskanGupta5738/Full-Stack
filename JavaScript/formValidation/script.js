@@ -41,3 +41,24 @@ TestFrom.addEventListener("submit", (e) => {
 });
 
 console.log(testFromDataJSON);
+
+
+const somedata = {
+  name:"Prince",age:"21",height:5.6,
+};
+
+const jsonToString = JSON.stringify(somedata);
+console.log(somedata);
+
+console.log(jsonToString);
+
+const stringToJson = JSON.parse(jsonToString);
+console.log(stringToJson);
+
+var SName = "Mansi"
+var marks = 99;
+console.log("student with name",SName,"marks",marks);
+console.log(`student with name ${SName} scored ${marks}`);
+
+
+
