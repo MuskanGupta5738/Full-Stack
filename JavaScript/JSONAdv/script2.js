@@ -28,3 +28,13 @@ const employees = [
   },
 ];
 
+console.log(employees);
+employees[1].salary = 45000;
+employees[0].projects[0].timeline = 3;
+employees[2].prosonalDetails.M_Name = "ebvub";
+employees[1].managename = "rohit";
+delete employees[1].managename;
+
+const product = [
+  { name: "qwer", description: "hi what is the weather of bhopal" },
+];
