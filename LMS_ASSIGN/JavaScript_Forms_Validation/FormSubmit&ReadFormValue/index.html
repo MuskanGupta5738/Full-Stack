@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Submission & Reading Form Values</title>
+  </head>
+  <body>
+    <h1>..1..</h1>
+    <h2>RICR Student Registration Form</h2>
+    <form id="studentForm">
+      <label for="name">Full Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Student Full Name"
+      />
+      <br /><br />
+      <label for="email">Email Address</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter email address"
+      />
+
+      <br /><br />
+      <label for="course">course</label>
+      <input
+        type="text"
+        name="course"
+        id="course"
+        placeholder="Enter course name"
+        required
+      />
+      <br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h1>..2..</h1>
+    <h2>RICR Course Enquiry Form Using FormData</h2>
+    <form id="courseEnquiryForm">
+      <label for="visitorName">Visitor's Name</label>
+      <input
+        type="text"
+        name="name"
+        id="visitorName"
+        placeholder="Enter your name"
+        required
+      />
+      <br /><br />
+
+      <label for="email">Email Address</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter email address"
+        required
+      />
+      <br /><br />
+
+      <label for="PhoneNo">Phone Number</label>
+      <input
+        type="tel"
+        name="phone"
+        id="PhoneNo"
+        placeholder="Enter phone number"
+        required
+      />
+      <br /><br />
+
+      <label for="Incourse">Interested Course</label>
+      <input
+        type="text"
+        name="course"
+        id="Incourse"
+        placeholder="Enter course name"
+        required
+      />
+      <br /><br />
+
+      <button type="submit">Submit Enquiry</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
