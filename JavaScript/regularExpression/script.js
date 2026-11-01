@@ -23,6 +23,5 @@ input.addEventListener("submit", (event) => {
         console.log("invalid name");
     }
      console.log(/^[A-Za-z]+$/.test(ch) ? "valid" : "invalid");
-   
     
 });
