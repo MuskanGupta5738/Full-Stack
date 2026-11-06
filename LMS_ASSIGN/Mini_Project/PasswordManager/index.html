@@ -29,6 +29,57 @@
     </header>
 
     <section class="container p-3 rounded shadow border mt-3">
+      <div class="d-flex gap-3 w-100">
+        <div class="w-100">
+          <label for="websiteName">Website Name</label>
+          <input
+            type="text"
+            name="websiteName"
+            id="websiteName"
+            class="form-control"
+          />
+        </div>
+        <div class="w-100">
+          <label for="userName">UserName</label>
+          <input
+            type="text"
+            name="userName"
+            id="userName"
+            class="form-control"
+          />
+        </div>
+      </div>
+      <div class="d-flex gap-3 w-100">
+        <div class="w-100">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="form-control"
+          />
+        </div>
+        <div class="w-100">
+          <label for="cfPassword">Confirm Password</label>
+          <input
+            type="password"
+            name="cfPassword"
+            id="cfPassword"
+            class="form-control"
+          />
+        </div>
+      </div>
+      <div class="mt-2 d-flex justify-content-between">
+        <button class="btn btn-secondary" onclick="ClearForm()">
+          Clear form
+        </button>
+        <button class="btn btn-primary" onclick="SavePassword()">
+          Save Password
+        </button>
+      </div>
+    </section>
+
+    <section class="container p-3 rounded shadow border mt-3">
       <div class="mb-3">
         <input
           type="search"
@@ -37,17 +88,27 @@
           placeholder="Search website name..."
         />
       </div>
+
+      <!-- <div class="w-100">
+        <label for="websiteURL">Website URL</label>
+        <input
+          type="url"
+          name="websiteURL"
+          id="websiteURL"
+          class="form-control"
+        />
+      </div> -->
       <div class="table-responsive">
         <table class="table table-striped table-bordered mt-3">
           <thead class="table-primary text-center">
             <tr>
               <th>Website Name</th>
-              <th>Website URL</th>
+              <!-- <th>Website URL</th> -->
               <th>Username / Email</th>
               <th>Password</th>
               <th>Show / Hide</th>
-              <th>Edit</th>
-              <th>Delete</th>
+              <th>Edit/dlt</th>
+              <!-- <th>Delete</th> -->
             </tr>
           </thead>
           <tbody id="dataTable" class="text-center"></tbody>
