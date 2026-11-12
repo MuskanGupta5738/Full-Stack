@@ -3,19 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Password Manager</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" >
   </head>
   <body>
-    <div class="container">
-      <h1>PassWord manager</h1>
-      <p>Store your website credentials securely</p>
+    <div class="container-fluid main-container">
+      <header class="main-header">
+        <div>
+          <h1>Password Manager</h1>
+          <p>Store your website credentials securely</p>
+        </div>
+        <button class="btn btn-primary" id="addPasswordBtn">
+          + Add Password
+        </button>
+      </header>
+
+      <section class="form-section" id="formSection">
+        <h2 id="formTitle">Add New Password</h2>
+        <form id="passwordForm">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="websiteName" class="form-label">Website Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="websiteName"
+                placeholder="e.g. GitHub"
+                required
+              />
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="websiteUrl" class="form-label">Website URL</label>
+              <input
+                type="url"
+                class="form-control"
+                id="websiteUrl"
+                placeholder="https://github.com"
+                required
+              />
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="username" class="form-label">Username or Email</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                placeholder="e.g. John"
+                required
+              />
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Enter password"
+                required
+                minlength="4"
+              />
+            </div>
+          </div>
+
+          <div class="form-buttons">
+            <button type="submit" class="btn btn-primary" id="savePasswordBtn">
+              Save Password
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              id="cancelEditBtn"
+              hidden
+            >
+              Cancel
+            </button>
+          </div>
+        </form>
+
+        <div id="messageBox" class="alert mt-3" hidden></div>
+      </section>
+
+      <section class="password-section">
+        <div class="section-heading">
+          <h2>Saved Passwords</h2>
+          <div class="search-box">
+            <input
+              type="search"
+              class="form-control"
+              id="searchInput"
+              placeholder="Search by website name..."
+            />
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-hover align-middle">
+            <thead>
+              <tr>
+                <th>Website Name</th>
+                <th>Website URL</th>
+                <th>Username / Email</th>
+                <th>Password</th>
+                <th>Show / Hide</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="dataTable"></tbody>
+          </table>
+        </div>
+
+        <div id="emptyState" class="empty-state">
+          No passwords saved yet. Click Add Password to get started.
+        </div>
+
+        <div id="noResults" class="empty-state" hidden>
+          No matching passwords found.
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <p>Password Manager | Learning Project</p>
+      </footer>
     </div>
-    <button>+Add PassWord</button>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
