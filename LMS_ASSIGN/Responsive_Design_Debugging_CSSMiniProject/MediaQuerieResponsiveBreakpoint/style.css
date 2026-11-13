@@ -1,76 +1,116 @@
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+    color: #333;
 }
 
-.container {
-  width: 90%;
-  margin: 40px auto;
+.dashboard {
+    width: 90%;
+    margin: 30px auto;
 }
 
-h1 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 30px;
+header {
+    background-color: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.student-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-info h2 {
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+.student-info p {
+    margin-bottom: 10px;
+}
+
+.course-heading {
+    margin-bottom: 20px;
+    color: #0d6efd;
 }
 
 .course-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 .card {
-  background-color: white;
-  padding: 25px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card h2 {
-  color: #0d6efd;
-  margin-bottom: 12px;
+.card h3 {
+    color: #0d6efd;
+    margin-bottom: 12px;
 }
 
 .card p {
-  color: #555;
-  font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 12px;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.status {
+    font-weight: bold;
+    color: #198754;
 }
 
 @media (max-width: 600px) {
-  .container {
-    width: 95%;
-  }
+    .dashboard {
+        width: 95%;
+    }
 
-  .card {
-    padding: 18px;
-  }
+    header h1 {
+        font-size: 20px;
+    }
 
-  h1 {
-    font-size: 25px;
-  }
+    .student-info,
+    .card {
+        padding: 18px;
+    }
 }
 
 @media (min-width: 768px) {
-  .course-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    header h1 {
+        font-size: 30px;
+    }
+
+    .course-container {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (min-width: 1024px) {
-  .course-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
+    header h1 {
+        font-size: 36px;
+    }
+
+    .course-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
